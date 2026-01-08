@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    border: 0.2px solid #ccc;
+    max-width: 300px;
+    /* margin-top: 90px; */
+/*    max-height: 900px;      /* 🔽 balandlik chegarasi */
+    /* overflow-y: auto;
+  }
+  
+  #suggestions li {
+    padding: 8px;
+    cursor: pointer;
+    background: #fff;
+  }
+  
+  #suggestions li:hover {
+    background: #f0f0f0;
+  } */
+ 
+
+
+ .search-box {
+    position: relative;   /* MUHIM */
+    width: 300px;
+  }
+  
+  #suggestions {
+    position: absolute;
+    top: 100%;             /* input OSTIDA */
+    left: 0;
+    right: 0;
+    
+    background: white;
+    border: 1px solid #788691;
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0 0;
+  
+    max-height: 1   300px;
+    overflow-y: auto;
+  
+    z-index: 11;          /* boshqa element ustiga chiqishi uchun */
+  }
+  
+  #suggestions li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  #suggestions li:hover {
+    background: #f0f0f0;
+    font-family: "Source Sans 3";
+  }
+  
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #788691;
+    padding-left: 100px;
+    padding-right: 200px;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+.left-logo img{
+    width: 90px;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.right-nav-text h1{
+    font-family: "Source Sans 3";
+    font-size: 32px;
+    margin-top: 20px;
+}
+.right-nav-text p{
+    font-family: "Source Sans 3";
+    font-size: 23px;
+    margin-top: -20px;
+}
+
+.input-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 50px;
+    border-radius: 12px;
+}
+.input-search img{
+    width: 35px;
+    margin-left: 5px;
+}
+.input-search input{
+    height: 45px;
+    width: 350px;
+    margin-left: 20px;
+    outline:  none;
+    border: none;
+    font-size: 22px;
+}
+.input-search button{
+    z-index: 2;
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: none;
+    font-family: "Source Sans 3";
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #00C6FD;
+}
